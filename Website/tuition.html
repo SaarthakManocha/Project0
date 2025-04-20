@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tuition Center</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+        form {
+            margin-top: 20px;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+        input, select {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        .btn {
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            padding: 10px 15px;
+            cursor: pointer;
+            border-radius: 4px;
+            width: 100%;
+        }
+        .btn:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome to XYZ Tuition Center</h1>
+        
+        <h2>Student Registration</h2>
+        <form action="/submit_registration" method="POST">
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" required>
+
+            <label for="course">Select Course:</label>
+            <select id="course" name="course" required>
+                <option value="math">Mathematics</option>
+                <option value="hindi">Hindi</option>
+                <option value="science">Science</option>
+                <option value="english">English</option>
+                <option value="computer">Computer Science</option>
+            </select>
+
+            <button type="submit" class="btn">Register</button>
+        </form>
+
+        <h2>Enroll Now</h2>
+        <p>Already registered? Enroll in our courses to start learning today!</p>
+        <form action="/submit_enrollment" method="POST">
+            <label for="student_id">Student ID:</label>
+            <input type="text" id="student_id" name="student_id" required>
+
+            <label for="enroll_course">Course to Enroll:</label>
+            <select id="enroll_course" name="enroll_course" required>
+                <option value="math">Mathematics</option>
+                <option value="hindi">Hindi</option>
+                <option value="science">Science</option>
+                <option value="english">English</option>
+                <option value="computer">Computer Science</option>
+            </select>
+
+            <button type="submit" class="btn">Enroll</button>
+        </form>
+    </div>     
+</body>
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>My First Website</title>
+        <link rel="stylesheet" href="form.css">
+    </head>
+    <body>
+       <div id="form1"><form action="index.php" method="POST" enctype="multipart/form-data">
+
+            <label for="Username">Username:</label>
+            <input type="text" id="Username" placeholder="SpongeBob" minlength="6" maxlength="15">
+        <br><br>
+        <label for="Password">Password:</label>
+        <input type="password" id="Password" minlength="6" maxlength="15">
+        <br><br>
+        <label for="E-mail">E-mail:</label>
+        <input type="email" id="E-mail" placeholder="SSquarepants@gmail.com">
+        <br><br>
+        <label for="Phone No">Phone No:</label>
+        <input type="tel" id="Phone No" placeholder="1234567890" pattern="[0-9]{10}">
+        <br><br>
+        <label for="bday">Date of Birth:</label>
+        <input type="date" id="bday">
+        <br><br>
+        <label for="quantity">Quantity:</label>
+        <input type="number" id="quantity" min="0" max="99">
+        <br><br>
+        <label for="Title">Title:</label>
+
+        <label for="Mr.">Mr.</label>
+        <input type="radio" id="Mr." value="Mr." name="Title">
+        <label for="Mrs.">Mrs.</label>
+        <input type="radio" id="Mrs." value="Mrs." name="Title">
+        <label for="Master">Master</label>
+        <input type="radio" id="Master" value="Master" name="Title">
+        <label for="Miss">Miss</label>
+        <input type="radio" id="Miss" value="Miss" name="Title">
+        <br><br>
+        <label for="Payment">Payment</label>
+        <select id="Payment">
+            <option value="Visa">Visa</option>
+            <option value="Mastercard">Mastercard</option>
+            <option value="UPI">UPI</option>
+            <option value="Gift Card">Gift Card</option>
+        </select>
+        <br><br>
+        <label for="Subscribe">Subscribe</label>
+        <input type="checkbox" id="Subscribe">
+        <br><br>
+        <label for="Comment">Comment:</label><br>
+        <textarea id="Comment" rows="4" cols="30"></textarea>
+        <br><br>
+        <label for="File">File:</label>
+        <input type="file" id="File" accept="image/png, image/jpeg">
+        <br><br>
+        <input type="reset"> <input type="submit">
+        
+        </div>
+       </form>
+
+    </body>
+</html>
